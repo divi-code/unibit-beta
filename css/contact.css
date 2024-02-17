@@ -1,0 +1,99 @@
+
+.container-bg {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+  }
+
+  .floating-div {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color:transparent;
+    border:1px solid #000;
+    border-radius: 50%;
+    animation: floatAnimation 5s infinite alternate;
+  }
+
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100vh);
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%, -10%);
+    color: #000;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideIn 2s ease forwards;
+    opacity: 0;
+  }
+
+  .content p {
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+  }
+
+  .content button {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+  }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .content button:hover {
+    background-color: #ff6b4a;
+  }
+  .form-input-s{
+      padding:20px;
+      border:none;
+      outline:none;background: #f7f4f2;
+padding: 0 40px;
+margin-bottom: 30px;
+border-radius: 30px;
+outline: none;
+height: 67px;
+width: 100%;
+font-size: 16px;
+color: #88858e;
+  }
+  .form-input-s::placeholder{
+      color:silver;
+  }
+  .form{
+      padding: 10px;
+  }
+  textarea.form-input-s{
+      position: relative;
+      height: 300px; width: 100%;
+      padding: 20px;
+  }

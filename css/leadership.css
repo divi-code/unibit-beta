@@ -1,0 +1,225 @@
+img{
+    width: 100%;
+}
+.leaders_teams{
+    text-align: center;text-transform: uppercase;
+}
+.team-name{
+    padding: 10px;
+}
+.team-image{
+    font-size: 15px;
+    position: relative;
+}
+.team-image img{
+    z-index: 4;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+} 
+.team-image::before{
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:  0%;
+    height:0%;
+    padding: 10px;
+    border-radius: 100%;
+    z-index: 10;
+    text-align: center;
+    background:rgba(255,255,255,.2);
+    -webkit-transition: all .4s ease .2s;
+    transition: all .4s ease .2s;
+    opacity: 0;
+}
+.con-sh-team:hover .team-image::before{
+opacity: 1;
+width: 100%;
+height: 100%;
+border-radius: 0%;
+transition: border-radius .3s ;
+}
+@keyframes zoom-zoom {
+    100%{
+    }
+    0%{
+        width: 0%;
+        border-radius: 0%;
+        transform: scale(1);
+    }
+}
+.con-sh-team:hover .img-team{
+    transition-timing-function: cubic-bezier(0.47,2.02,.31,-.36);
+}
+.con-sh-team{
+    text-align: center;
+    position: relative;
+}
+.con-sh-team>.card{
+    position: initial;
+}
+.team-name{
+    position: relative;
+    z-index: 3;
+    height: 150px;
+}
+.team-name::before{
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 0%;
+    background: #004809;
+    transition: height .5s;
+    z-index: -1;
+}
+.con-sh-team:hover .team-name::before{
+height: 100%;
+}.con-sh-team:hover{
+    color:#fff;
+}
+.team-name>.linkspace {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: perspective(200px) rotateX(100deg);
+    visibility: hidden;
+    transition: .5s;
+}
+.linkspace a{
+    text-decoration: none;
+    background: #004809;
+    color:#fff;
+    border:1px solid #fff;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    padding:10px;
+    border-radius:5px;
+    animation: zoom-in-out .3s infinite;
+
+}
+.con-sh-team:hover .linkspace{
+text-decoration: none;
+visibility: visible;
+transform: perspective(200px) rotateX(0deg);
+} 
+@keyframes row-flip {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(0);
+        -ms-transform: perspective(400px) rotateX(0);
+        transform: perspective(400px) rotateX(0);
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        -ms-transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg);
+    }
+}
+.team-name a:hover{
+text-decoration: none;
+background: #fff; color: #000;
+} 
+.float-1,.float-2,.float-3,.float-4{
+    min-height:80px;
+    background: #8200008e;
+    min-width: 80px;
+    position: absolute;
+    top: 100%;
+    animation: move-top 10s infinite;
+    transition: 10s;
+    z-index: 1;border-radius: 10px;
+    user-select: none;
+    pointer-events: none;overflow: hidden;
+}
+.float-1{
+    left:5%;
+    min-width: 20px;
+    min-height: 20px;
+    animation: move-top 7s infinite  alternate;
+    transition: 7s;
+}
+.float-2{
+    left: 20%;
+    min-width: 40px;
+    min-height: 40px;
+    animation: move-top 10s infinite;
+    transition: 10s;
+}
+.float-3{
+    left: 50%;
+    min-width: 80px;
+    min-height: 80px;
+    animation: move-top 10s infinite alternate;
+    transition: 10s;
+}
+.float-4{
+    left: 60%;
+}
+@keyframes move-top{
+    100%{
+        top:0;
+transform: rotateZ(90deg);
+
+    }
+    0%{
+        top:100%;
+transform: rotateZ(0deg);
+
+    }
+}
+.con-sh-team.card{
+    background: transparent !important;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.leaders_teams h1{
+    
+font-weight: 600;
+}
+@media (max-width:425px){
+   
+    .linkspace a{
+        text-decoration: none;
+        background: #004809;
+        color:#fff;
+        border:1px solid #fff;
+        text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+        padding:10px;
+        border-radius:5px;
+        animation: zoom-in-out .3s infinite;
+    
+    }.team-name {
+        position: relative;
+        z-index: 3;
+        color: #fff;
+        height: 150px;
+    }
+    .leaders_teams h1{
+        
+    font-weight: 600;
+    font-size: x-large;
+    }
+    .team-name::before{
+        content: "";
+        position: absolute;
+        top: 0;left: 0;
+        width: 100%;
+        height: 100%;
+        background: #004809;color: #fff;
+        transition: height .5s;
+        z-index: -1;
+    }.team-name>.linkspace {
+        visibility: visible;
+        transform: perspective(200px) rotateX(00deg);
+        transition: transform .3s;
+    }
+}

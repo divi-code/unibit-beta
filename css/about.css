@@ -1,0 +1,158 @@
+.text-let_build{
+    position:relative;
+    padding: 3rem 0 3rem 0;
+    background:url('../img/web-banner-2.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  .text-let_build::before{
+    position: absolute;
+    top:0;left: 0;
+    width: 100%;
+    height: 100%;
+    background:#000000;
+  }
+  .p-ab-top{
+  }
+  .ova-icon-text{
+    
+    position: relative;
+    display: block;
+    height: 193px;
+    width: 193px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 5px 30px 0px rgb(0 0 0 / 10%);
+    margin: 45px 0px 0px 75px;
+  }.ova-icon-text:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    position: absolute;
+    bottom: 13px;
+    right: 25px;
+    transform: rotate(-85deg);
+    }
+    .ova-icon-text .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.ova-icon-text .icon-box {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    height: 106px;
+    width: 106px;
+    background: #721c24;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-graduated:before {
+    content: "\e90d";
+}
+.tex-cj p{
+text-align: center;
+color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+
+.container-about-us{
+  height: 50vh;
+  background: url('../img/about_love.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.container-about-us h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 100px;
+}
+img{
+  width: 100%;
+}
+.cont-text,.cont-img{
+  padding: 1rem;font-size: 20px;
+}
+.cont-text h2{
+  font-weight: 700;
+  font-size: 30px;
+}
+.bg-green{
+  background: #012D17;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.become-v-o{
+    position: relative;
+    width: 100%;
+    background: #480000;
+}
+.become-v-o>.row{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  white-space-collapse: preserve-breaks;
+    color: #fff;text-align: center;
+}
+@media (max-width:425px) {
+  .container-about-us h2 {
+    position: revert-layer;
+    transform: inherit;
+    text-align: center;
+    color: #fff;
+    font-size: 39px;
+    padding: 7rem 0rem 7rem 4rem;
+  }
+.ova-icon-text {
+  position: relative;
+  display: block;
+  height: 156px;
+  width: 57%;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 5px 30px 0px rgb(0 0 0 / 10%);
+  margin: 45px 0px 0px 75px;
+}
+.ova-icon-text .icon-box {
+  position: absolute;
+  top: -25px;
+  right: -19px;
+  height: 89px;
+  width: 89px;
+  background: #721c24;}
+  .cont-text, .cont-img {
+    padding: 0;
+    font-size: smaller;
+}
+.cont-text h2 {
+  font-weight: 700;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 30px;
+}
+}

@@ -1,0 +1,62 @@
+.image{
+    color:#fff;
+  }
+.galleries-a:hover .image{     
+visibility: hidden;
+}  
+.gallery-img{
+  position: relative;
+  overflow: hidden;
+}
+.sb-c-s{
+  pointer-events: none;
+}
+.galleries-a:hover .sb-c-s::after,.galleries-a:hover .sb-c-s::after{            
+height: 50%;
+}
+.galleries-a:hover .sb-c-s::before,.galleries-a:hover .sb-c-s::before{            
+top: 50%;pointer-events: none;
+}
+.galleries-a:hover .sb-c-s{           
+visibility: visible;
+}
+.modal-body{
+padding: 0;
+}
+.card-body.text-body{
+padding: 10px;
+  position: absolute;
+  bottom: 2%;
+  border-top: 1px solid #fff;
+  width: 100%;
+}
+.card-body.text-body p{
+color: #fff;
+}
+.modal-content,.modal-header,.modal-footer{
+background: transparent;
+border: none;
+}
+.modal-header .close{
+color: #fff;
+}
+.modal-footer{
+position: absolute;
+  top: 50%;
+  width: 100%;
+  justify-content: center;
+}
+#prevBtn{
+position: absolute;
+left: 10%;
+background: transparent;
+outline: none;
+border: 1px solid #fff;
+}
+#nextBtn{
+position: absolute;
+background: transparent;
+outline: none;
+border: 1px solid #fff;
+right: 10%;
+}
